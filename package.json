@@ -1,0 +1,37 @@
+{
+  "name": "dbstudio",
+  "version": "0.1.0",
+  "description": "Spin up Drizzle Studio from any database URL",
+  "license": "MIT",
+  "type": "module",
+  "module": "main.ts",
+  "bin": {
+    "dbstudio": "./bin/dbstudio"
+  },
+  "scripts": {
+    "start": "bun main.ts",
+    "dev": "bun --watch main.ts",
+    "compile": "bun build main.ts --compile --outfile bin/dbstudio",
+    "compile:linux": "bun build main.ts --compile --target=bun-linux-x64 --outfile bin/dbstudio-linux",
+    "compile:mac": "bun build main.ts --compile --target=bun-darwin-arm64 --outfile bin/dbstudio-mac"
+  },
+  "engines": {
+    "bun": ">=1.0.0"
+  },
+  "files": [
+    "main.ts",
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "drizzle-kit": "latest",
+    "pg": "latest"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "latest"
+  }
+}
