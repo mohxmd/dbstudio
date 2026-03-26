@@ -4,9 +4,8 @@
   "description": "Spin up Drizzle Studio from any database URL",
   "license": "MIT",
   "type": "module",
-  "module": "main.ts",
   "bin": {
-    "dbstudio": "./bin/dbstudio"
+    "dbstudio": "./dist/index.js"
   },
   "scripts": {
     "start": "bun main.ts",
@@ -20,8 +19,7 @@
     "bun": ">=1.0.0"
   },
   "files": [
-    "main.ts",
-    "lib",
+    "dist",
     "README.md",
     "LICENSE"
   ],
@@ -31,8 +29,5 @@
   },
   "devDependencies": {
     "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "latest"
   }
 }
