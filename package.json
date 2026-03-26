@@ -1,5 +1,5 @@
 {
-  "name": "dbstudio",
+  "name": "@mohxmd/dbstudio",
   "version": "0.1.0",
   "description": "Spin up Drizzle Studio from any database URL",
   "license": "MIT",
