@@ -1,6 +1,6 @@
 {
   "name": "@mohxmd/dbstudio",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Spin up Drizzle Studio from any database URL",
   "license": "MIT",
   "type": "module",
